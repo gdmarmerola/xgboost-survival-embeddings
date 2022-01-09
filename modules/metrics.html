@@ -17,7 +17,7 @@
     
     
       
-        <title>Basic Usage: - XGBoost Survival Embeddings</title>
+        <title>metrics - XGBoost Survival Embeddings</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#basic-usage" class="md-skip">
+        <a href="#xgbsemetrics" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basic Usage:
+              metrics
             
           </span>
         </div>
@@ -220,13 +220,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../modules/base.html" class="md-tabs__link">
+      <a href="base.html" class="md-tabs__link md-tabs__link--active">
         Modules
       </a>
     </li>
@@ -242,7 +244,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="confidence_interval.html" class="md-tabs__link">
+      <a href="../examples/confidence_interval.html" class="md-tabs__link">
         Examples
       </a>
     </li>
@@ -271,6 +273,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -370,12 +374,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -398,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/base.html" class="md-nav__link">
+      <a href="base.html" class="md-nav__link">
         XGBSEBaseEstimator
       </a>
     </li>
@@ -412,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/bce.html" class="md-nav__link">
+      <a href="bce.html" class="md-nav__link">
         XGBSEDebiasedBCE
       </a>
     </li>
@@ -426,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/stacked_weibull.html" class="md-nav__link">
+      <a href="stacked_weibull.html" class="md-nav__link">
         XGBSEStackedWeibull
       </a>
     </li>
@@ -440,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/kaplan_neighs.html" class="md-nav__link">
+      <a href="kaplan_neighs.html" class="md-nav__link">
         XGBSEKaplanNeighbors
       </a>
     </li>
@@ -454,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/kaplan_tree.html" class="md-nav__link">
+      <a href="kaplan_tree.html" class="md-nav__link">
         XGBSEKaplanTree
       </a>
     </li>
@@ -468,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/meta.html" class="md-nav__link">
+      <a href="meta.html" class="md-nav__link">
         XGBSEBootstrapEstimator
       </a>
     </li>
@@ -482,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/extrapolation.html" class="md-nav__link">
+      <a href="extrapolation.html" class="md-nav__link">
         extrapolation
       </a>
     </li>
@@ -496,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/converters.html" class="md-nav__link">
+      <a href="converters.html" class="md-nav__link">
         converters
       </a>
     </li>
@@ -508,11 +514,73 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../modules/metrics.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          metrics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="metrics.html" class="md-nav__link md-nav__link--active">
         metrics
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xgbse.metrics" class="md-nav__link">
+    xgbse.metrics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgbse.metrics.approx_brier_score" class="md-nav__link">
+    approx_brier_score()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgbse.metrics.concordance_index" class="md-nav__link">
+    concordance_index()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgbse.metrics.dist_calibration_score" class="md-nav__link">
+    dist_calibration_score()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -558,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="confidence_interval.html" class="md-nav__link">
+      <a href="../examples/confidence_interval.html" class="md-nav__link">
         Confidence intervals
       </a>
     </li>
@@ -572,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="extrapolation_example.html" class="md-nav__link">
+      <a href="../examples/extrapolation_example.html" class="md-nav__link">
         Extrapolation
       </a>
     </li>
@@ -609,7 +677,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -628,43 +698,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metrabic" class="md-nav__link">
-    Metrabic
+  <a href="#xgbse.metrics" class="md-nav__link">
+    xgbse.metrics
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#split-and-time-bins" class="md-nav__link">
-    Split and Time Bins
+  <a href="#xgbse.metrics.approx_brier_score" class="md-nav__link">
+    approx_brier_score()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fit-and-predict" class="md-nav__link">
-    Fit and Predict
+  <a href="#xgbse.metrics.concordance_index" class="md-nav__link">
+    concordance_index()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#neighbors" class="md-nav__link">
-    Neighbors
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#score-metrics" class="md-nav__link">
-    Score metrics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cross-validation" class="md-nav__link">
-    Cross Validation
+  <a href="#xgbse.metrics.dist_calibration_score" class="md-nav__link">
+    dist_calibration_score()
   </a>
   
 </li>
@@ -681,589 +737,317 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/loft-br/xgboost-survival-embeddings/edit/master/docs/examples/basic_usage.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/loft-br/xgboost-survival-embeddings/edit/master/docs/modules/metrics.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="basic-usage">Basic Usage:<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h1>
-<p>In this notebook you will find:
-- How to get a survival curve and neighbors prediction using xgbse
-- How to validate your xgbse model using sklearn</p>
-<h2 id="metrabic">Metrabic<a class="headerlink" href="#metrabic" title="Permanent link">&para;</a></h2>
-<p>We will be using the Molecular Taxonomy of Breast Cancer International Consortium (METABRIC) dataset from <a href="https://github.com/havakv/pycox#datasets">pycox</a> as base for this example.</p>
-<pre class="highlight"><code class="language-python">from xgbse.converters import convert_to_structured
-from pycox.datasets import metabric
-import numpy as np
+<h1 id="xgbsemetrics">xgbse.metrics<a class="headerlink" href="#xgbsemetrics" title="Permanent link">&para;</a></h1>
 
-# getting data
-df = metabric.read_df()
 
-df.head()</code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+  <div class="doc doc-object doc-module">
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<a id="xgbse.metrics"></a>
+    <div class="doc doc-contents first">
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-function">
+
+
+
+<h3 class="doc doc-heading" id="xgbse.metrics.approx_brier_score">
+<code class="highlight language-python">approx_brier_score(y_true, survival, aggregate='mean')</code>
+
+
+<a class="headerlink" href="#xgbse.metrics.approx_brier_score" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Estimate brier score for all survival time windows. Aggregate scores for an approximate
+integrated brier score estimate.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>x0</th>
-      <th>x1</th>
-      <th>x2</th>
-      <th>x3</th>
-      <th>x4</th>
-      <th>x5</th>
-      <th>x6</th>
-      <th>x7</th>
-      <th>x8</th>
-      <th>duration</th>
-      <th>event</th>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>y_true</code></td>
+        <td><code>structured array(numpy.bool_, numpy.number</code></td>
+        <td><p>B inary event indicator as first field,
+and time of event or time of censoring as second field.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>survival</code></td>
+        <td><code>[pd.DataFrame, np.array]</code></td>
+        <td><p>A dataframe of survival probabilities
+for all times (columns), from a time_bins array, for all samples of X (rows).
+If risk_strategy is 'precomputed', is an array with representing risks for each sample.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>aggregate</code></td>
+        <td><code>[string, None]</code></td>
+        <td><p>How to aggregate brier scores from different time windows:</p>
+<ul>
+<li>
+<p><code>mean</code> takes simple average</p>
+</li>
+<li>
+<p><code>None</code> returns full list of brier scores for each time window</p>
+</li>
+</ul></td>
+        <td><code>&#39;mean&#39;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>5.603834</td>
-      <td>7.811392</td>
-      <td>10.797988</td>
-      <td>5.967607</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>56.840000</td>
-      <td>99.333336</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5.284882</td>
-      <td>9.581043</td>
-      <td>10.204620</td>
-      <td>5.664970</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>85.940002</td>
-      <td>95.733330</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>5.920251</td>
-      <td>6.776564</td>
-      <td>12.431715</td>
-      <td>5.873857</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>48.439999</td>
-      <td>140.233337</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>6.654017</td>
-      <td>5.341846</td>
-      <td>8.646379</td>
-      <td>5.655888</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>66.910004</td>
-      <td>239.300003</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5.456747</td>
-      <td>5.339741</td>
-      <td>10.555724</td>
-      <td>6.008429</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>67.849998</td>
-      <td>56.933334</td>
-      <td>1</td>
+      <td><code>[Float, np.array]</code></td>
+      <td><p>single value if aggregate is 'mean'
+    np.array if aggregate is None</p></td>
     </tr>
   </tbody>
 </table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-function">
+
+
+
+<h3 class="doc doc-heading" id="xgbse.metrics.concordance_index">
+<code class="highlight language-python">concordance_index(y_true, survival, risk_strategy='mean', which_window=None)</code>
+
+
+<a class="headerlink" href="#xgbse.metrics.concordance_index" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Compute the C-index for a structured array of ground truth times and events
+and a predicted survival curve using different strategies for estimating risk from it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Computation of the C-index is <span class="arithmatex">\(\mathcal{O}(n^2)\)</span>.</li>
+</ul>
 </div>
 
-<h2 id="split-and-time-bins">Split and Time Bins<a class="headerlink" href="#split-and-time-bins" title="Permanent link">&para;</a></h2>
-<p>Split the data in train and test, using sklearn API. We also setup the TIME_BINS array, which will be used to fit the survival curve</p>
-<pre class="highlight"><code class="language-python">from xgbse.converters import convert_to_structured
-from sklearn.model_selection import train_test_split
-
-# splitting to X, T, E format
-X = df.drop(['duration', 'event'], axis=1)
-T = df['duration']
-E = df['event']
-y = convert_to_structured(T, E)
-
-# splitting between train, and validation
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=1/3, random_state = 0)
-TIME_BINS = np.arange(15, 315, 15)
-TIME_BINS</code></pre>
-<pre class="highlight"><code>array([ 15,  30,  45,  60,  75,  90, 105, 120, 135, 150, 165, 180, 195,
-       210, 225, 240, 255, 270, 285, 300])
-
-
-</code></pre>
-<h2 id="fit-and-predict">Fit and Predict<a class="headerlink" href="#fit-and-predict" title="Permanent link">&para;</a></h2>
-<p>We will be using the DebiasedBCE estimator to fit the model and predict a survival curve for each point in our test data</p>
-<pre class="highlight"><code class="language-python">from xgbse import XGBSEDebiasedBCE
-
-# fitting xgbse model
-xgbse_model = XGBSEDebiasedBCE()
-xgbse_model.fit(X_train, y_train, time_bins=TIME_BINS)
-
-# predicting
-y_pred = xgbse_model.predict(X_test)
-
-print(y_pred.shape)
-y_pred.head()</code></pre>
-<pre class="highlight"><code>(635, 20)
-
-
-
-
-
-</code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<p><strong>Parameters:</strong></p>
+<table>
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>15</th>
-      <th>30</th>
-      <th>45</th>
-      <th>60</th>
-      <th>75</th>
-      <th>90</th>
-      <th>105</th>
-      <th>120</th>
-      <th>135</th>
-      <th>150</th>
-      <th>165</th>
-      <th>180</th>
-      <th>195</th>
-      <th>210</th>
-      <th>225</th>
-      <th>240</th>
-      <th>255</th>
-      <th>270</th>
-      <th>285</th>
-      <th>300</th>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>y_true</code></td>
+        <td><code>structured array(numpy.bool_, numpy.number</code></td>
+        <td><p>Binary event indicator as first field,
+and time of event or time of censoring as second field.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>survival</code></td>
+        <td><code>[pd.DataFrame, np.array]</code></td>
+        <td><p>A dataframe of survival probabilities
+for all times (columns), from a time_bins array, for all samples of X (rows).
+If risk_strategy is 'precomputed', is an array with representing risks for each sample.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>risk_strategy</code></td>
+        <td><code>string</code></td>
+        <td><p>Strategy to compute risks from the survival curve. For a given sample:</p>
+<ul>
+<li>
+<p><code>mean</code> averages probabilities across all times</p>
+</li>
+<li>
+<p><code>window</code>: lets user choose on of the time windows available (by which_window argument)
+    and uses probabilities of this specific window</p>
+</li>
+<li>
+<p><code>midpoint</code>: selects the most central window of index int(survival.columns.shape[0]/2)
+    and uses probabilities of this specific window</p>
+</li>
+<li>
+<p><code>precomputed</code>: assumes user has already calculated risk.
+    The survival argument is assumed to contain an array of risks instead</p>
+</li>
+</ul></td>
+        <td><code>&#39;mean&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>which_window</code></td>
+        <td><code>object</code></td>
+        <td><p>Which window to use when risk_strategy is 'window'. Should be one
+of the columns of the dataframe. Will raise ValueError if column is not present</p></td>
+        <td><code>None</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>0.983502</td>
-      <td>0.951852</td>
-      <td>0.923277</td>
-      <td>0.900028</td>
-      <td>0.862270</td>
-      <td>0.799324</td>
-      <td>0.715860</td>
-      <td>0.687257</td>
-      <td>0.651314</td>
-      <td>0.610916</td>
-      <td>0.568001</td>
-      <td>0.513172</td>
-      <td>0.493194</td>
-      <td>0.430701</td>
-      <td>0.377675</td>
-      <td>0.310496</td>
-      <td>0.272169</td>
-      <td>0.225599</td>
-      <td>0.184878</td>
-      <td>0.144089</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.973506</td>
-      <td>0.917739</td>
-      <td>0.839154</td>
-      <td>0.710431</td>
-      <td>0.663119</td>
-      <td>0.558886</td>
-      <td>0.495204</td>
-      <td>0.364995</td>
-      <td>0.311628</td>
-      <td>0.299939</td>
-      <td>0.226226</td>
-      <td>0.191373</td>
-      <td>0.171697</td>
-      <td>0.144864</td>
-      <td>0.112447</td>
-      <td>0.089558</td>
-      <td>0.081137</td>
-      <td>0.057679</td>
-      <td>0.048563</td>
-      <td>0.035985</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.986894</td>
-      <td>0.959209</td>
-      <td>0.919768</td>
-      <td>0.889910</td>
-      <td>0.853239</td>
-      <td>0.777208</td>
-      <td>0.725381</td>
-      <td>0.649177</td>
-      <td>0.582569</td>
-      <td>0.531787</td>
-      <td>0.485275</td>
-      <td>0.451667</td>
-      <td>0.428899</td>
-      <td>0.386413</td>
-      <td>0.344369</td>
-      <td>0.279685</td>
-      <td>0.242064</td>
-      <td>0.187967</td>
-      <td>0.158121</td>
-      <td>0.118562</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.986753</td>
-      <td>0.955210</td>
-      <td>0.910354</td>
-      <td>0.857684</td>
-      <td>0.824301</td>
-      <td>0.769262</td>
-      <td>0.665805</td>
-      <td>0.624934</td>
-      <td>0.583592</td>
-      <td>0.537261</td>
-      <td>0.493957</td>
-      <td>0.443193</td>
-      <td>0.416702</td>
-      <td>0.376552</td>
-      <td>0.308947</td>
-      <td>0.237033</td>
-      <td>0.177140</td>
-      <td>0.141838</td>
-      <td>0.117917</td>
-      <td>0.088937</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.977348</td>
-      <td>0.940368</td>
-      <td>0.873695</td>
-      <td>0.804796</td>
-      <td>0.742655</td>
-      <td>0.632426</td>
-      <td>0.556008</td>
-      <td>0.521490</td>
-      <td>0.493577</td>
-      <td>0.458477</td>
-      <td>0.416363</td>
-      <td>0.391099</td>
-      <td>0.364431</td>
-      <td>0.291472</td>
-      <td>0.223758</td>
-      <td>0.190398</td>
-      <td>0.165911</td>
-      <td>0.120061</td>
-      <td>0.095512</td>
-      <td>0.069566</td>
+      <td><code>Float</code></td>
+      <td><p>Concordance index for y_true and survival</p></td>
     </tr>
   </tbody>
 </table>
-</div>
+    </div>
 
-<p>mean predicted survival curve for test data</p>
-<pre class="highlight"><code class="language-python">y_pred.mean().plot.line();</code></pre>
-<p><img alt="svg" src="img/output_8_0.svg" /></p>
-<h2 id="neighbors">Neighbors<a class="headerlink" href="#neighbors" title="Permanent link">&para;</a></h2>
-<p>We can also use our model for querying comparables based on survivability.</p>
-<pre class="highlight"><code class="language-python">neighbors = xgbse_model.get_neighbors(
-    query_data = X_test,
-    index_data = X_train,
-    n_neighbors = 5
-)
-
-print(neighbors.shape)
-neighbors.head(5)</code></pre>
-<pre class="highlight"><code>(635, 5)
+  </div>
 
 
 
+  <div class="doc doc-object doc-function">
 
 
-</code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<h3 class="doc doc-heading" id="xgbse.metrics.dist_calibration_score">
+<code class="highlight language-python">dist_calibration_score(y_true, survival, n_bins=10, returns='pval')</code>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+
+<a class="headerlink" href="#xgbse.metrics.dist_calibration_score" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Estimate D-Calibration for the survival predictions.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>neighbor_1</th>
-      <th>neighbor_2</th>
-      <th>neighbor_3</th>
-      <th>neighbor_4</th>
-      <th>neighbor_5</th>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>y_true</code></td>
+        <td><code>structured array(numpy.bool_, numpy.number</code></td>
+        <td><p>Binary event indicator as first field,
+and time of event or time of censoring as second field.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>survival</code></td>
+        <td><code>[pd.DataFrame, np.array]</code></td>
+        <td><p>A dataframe of survival probabilities
+for all times (columns), from a time_bins array, for all samples of X (rows).
+If risk_strategy is 'precomputed', is an array with representing risks for each sample.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>n_bins</code></td>
+        <td><code>Int</code></td>
+        <td><p>Number of bins to equally divide the [0, 1] interval</p></td>
+        <td><code>10</code></td>
+      </tr>
+      <tr>
+        <td><code>returns</code></td>
+        <td><code>string</code></td>
+        <td><p>What information to return from the function:</p>
+<ul>
+<li>
+<p><code>statistic</code> returns the chi squared test statistic</p>
+</li>
+<li>
+<p><code>pval</code> returns the chi squared test p value</p>
+</li>
+<li>
+<p><code>max_deviation</code> returns the maximum percentage deviation from the expected value,
+calculated as <code>abs(expected_percentage - real_percentage)</code>,
+where <code>expected_percentage = 1.0/n_bins</code></p>
+</li>
+<li>
+<p><code>histogram</code> returns the full calibration histogram per bin</p>
+</li>
+<li>
+<p><code>all</code> returns all of the above in a dictionary</p>
+</li>
+</ul></td>
+        <td><code>&#39;pval&#39;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>829</th>
-      <td>339</td>
-      <td>166</td>
-      <td>508</td>
-      <td>1879</td>
-      <td>418</td>
-    </tr>
-    <tr>
-      <th>670</th>
-      <td>1846</td>
-      <td>1082</td>
-      <td>1297</td>
-      <td>194</td>
-      <td>1448</td>
-    </tr>
-    <tr>
-      <th>1064</th>
-      <td>416</td>
-      <td>1230</td>
-      <td>739</td>
-      <td>1392</td>
-      <td>589</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>1558</td>
-      <td>8</td>
-      <td>1080</td>
-      <td>613</td>
-      <td>1522</td>
-    </tr>
-    <tr>
-      <th>1814</th>
-      <td>105</td>
-      <td>859</td>
-      <td>1743</td>
-      <td>50</td>
-      <td>566</td>
+      <td><code>[Float, np.array, Dict]</code></td>
+      <td><ul>
+<li>Single value if returns is in `['statistic','pval','max_deviation']``</li>
+<li>np.array if returns is 'histogram'</li>
+<li>dict if returns is 'all'</li>
+</ul></td>
     </tr>
   </tbody>
 </table>
-</div>
+    </div>
 
-<p><b>example</b>: selecting a data point from query data (X_test) and checking its features</p>
-<pre class="highlight"><code class="language-python">desired = neighbors.iloc[10]
+  </div>
 
-X_test.loc[X_test.index == desired.name]</code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>x0</th>
-      <th>x1</th>
-      <th>x2</th>
-      <th>x3</th>
-      <th>x4</th>
-      <th>x5</th>
-      <th>x6</th>
-      <th>x7</th>
-      <th>x8</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>399</th>
-      <td>5.572504</td>
-      <td>7.367552</td>
-      <td>11.023443</td>
-      <td>5.406307</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>67.620003</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
-<p>... and finding its comparables from index data (X_train)</p>
-<pre class="highlight"><code class="language-python">X_train.loc[X_train.index.isin(desired.tolist())]</code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>x0</th>
-      <th>x1</th>
-      <th>x2</th>
-      <th>x3</th>
-      <th>x4</th>
-      <th>x5</th>
-      <th>x6</th>
-      <th>x7</th>
-      <th>x8</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>757</th>
-      <td>5.745395</td>
-      <td>8.178815</td>
-      <td>10.745699</td>
-      <td>5.530381</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>64.930000</td>
-    </tr>
-    <tr>
-      <th>726</th>
-      <td>5.635854</td>
-      <td>6.648942</td>
-      <td>10.889588</td>
-      <td>5.496374</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>70.860001</td>
-    </tr>
-    <tr>
-      <th>968</th>
-      <td>5.541239</td>
-      <td>7.058089</td>
-      <td>10.463409</td>
-      <td>5.396433</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>71.070000</td>
-    </tr>
-    <tr>
-      <th>870</th>
-      <td>5.605712</td>
-      <td>7.309217</td>
-      <td>10.935708</td>
-      <td>5.542732</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>71.470001</td>
-    </tr>
-    <tr>
-      <th>1640</th>
-      <td>5.812605</td>
-      <td>7.646811</td>
-      <td>10.952687</td>
-      <td>5.516386</td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>68.559998</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+  </div>
 
-<h2 id="score-metrics">Score metrics<a class="headerlink" href="#score-metrics" title="Permanent link">&para;</a></h2>
-<p>XGBSE implements concordance index and integrated brier score, both can be used to evaluate model performance</p>
-<pre class="highlight"><code class="language-python"># importing metrics
-from xgbse.metrics import concordance_index, approx_brier_score
+    </div>
 
-# running metrics
-print(f"C-index: {concordance_index(y_test, y_pred)}")
-print(f"Avg. Brier Score: {approx_brier_score(y_test, y_pred)}")</code></pre>
-<pre class="highlight"><code>C-index: 0.6706453426714781
-Avg. Brier Score: 0.17221909077845754
-
-</code></pre>
-<h2 id="cross-validation">Cross Validation<a class="headerlink" href="#cross-validation" title="Permanent link">&para;</a></h2>
-<p>We can also use sklearn's cross_val_score and make_scorer to cross validate our model</p>
-<pre class="highlight"><code class="language-python">from sklearn.model_selection import cross_val_score
-from sklearn.metrics import make_scorer
-
-results = cross_val_score(xgbse_model, X, y, scoring=make_scorer(approx_brier_score))
-results</code></pre>
-<pre class="highlight"><code>array([0.16269636, 0.14880423, 0.12848939, 0.15335356, 0.15394174])
-
-</code></pre>
+  </div>
 
               
             </article>
@@ -1273,6 +1057,41 @@ results</code></pre>
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="converters.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: converters" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              converters
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../examples/confidence_interval.html" class="md-footer__link md-footer__link--next" aria-label="Next: Confidence intervals" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Confidence intervals
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

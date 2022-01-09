@@ -17,7 +17,7 @@
     
     
       
-        <title>Basic Usage - XGBoost Survival Embeddings</title>
+        <title>How XGBSE works - XGBoost Survival Embeddings</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api" class="md-skip">
+        <a href="#what-xgbse-tries-to-solve" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basic Usage
+              How XGBSE works
             
           </span>
         </div>
@@ -196,10 +196,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="how_xgbse_works.html" class="md-tabs__link">
+    <a href="how_xgbse_works.html" class="md-tabs__link md-tabs__link--active">
       How XGBSE works
     </a>
   </li>
@@ -208,12 +210,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="basic-usage.html" class="md-tabs__link md-tabs__link--active">
+    <a href="basic-usage.html" class="md-tabs__link">
       Basic Usage
     </a>
   </li>
@@ -344,21 +344,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="how_xgbse_works.html" class="md-nav__link">
-        How XGBSE works
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -369,12 +354,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Basic Usage
+          How XGBSE works
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="basic-usage.html" class="md-nav__link md-nav__link--active">
-        Basic Usage
+      <a href="how_xgbse_works.html" class="md-nav__link md-nav__link--active">
+        How XGBSE works
       </a>
       
         
@@ -391,43 +376,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    API
+  <a href="#what-xgbse-tries-to-solve" class="md-nav__link">
+    What xgbse tries to solve
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#survival-curves-and-confidence-intervals" class="md-nav__link">
-    Survival curves and confidence intervals
+  <a href="#leveraging-xgboost-as-a-feature-transformer" class="md-nav__link">
+    Leveraging xgboost as a feature transformer
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#early-stopping" class="md-nav__link">
-    Early stopping
+  <a href="#xgbsedebiasedbce-logistic-regressions-time-windows-embedding-as-input" class="md-nav__link">
+    XGBSEDebiasedBCE: logistic regressions, time windows, embedding as input
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#explainability-through-prototypes" class="md-nav__link">
-    Explainability through prototypes
+  <a href="#xgbsestackedweibull-xgboost-as-risk-estimator-weibull-aft-for-survival-curve" class="md-nav__link">
+    XGBSEStackedWeibull: XGBoost as risk estimator, Weibull AFT for survival curve
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    Metrics
+  <a href="#xgbsekaplanneighbors-kaplan-meier-on-nearest-neighbors" class="md-nav__link">
+    XGBSEKaplanNeighbors: Kaplan-Meier on nearest neighbors
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#citing-xgbse" class="md-nav__link">
-    Citing xgbse
+  <a href="#xgbsekaplantree-single-tree-and-kaplan-meier-on-its-leaves" class="md-nav__link">
+    XGBSEKaplanTree: single tree, and Kaplan-Meier on its leaves
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#does-it-solve-the-problem" class="md-nav__link">
+    Does it solve the problem?
   </a>
   
 </li>
@@ -443,6 +435,21 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="basic-usage.html" class="md-nav__link">
+        Basic Usage
+      </a>
     </li>
   
 
@@ -711,43 +718,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    API
+  <a href="#what-xgbse-tries-to-solve" class="md-nav__link">
+    What xgbse tries to solve
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#survival-curves-and-confidence-intervals" class="md-nav__link">
-    Survival curves and confidence intervals
+  <a href="#leveraging-xgboost-as-a-feature-transformer" class="md-nav__link">
+    Leveraging xgboost as a feature transformer
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#early-stopping" class="md-nav__link">
-    Early stopping
+  <a href="#xgbsedebiasedbce-logistic-regressions-time-windows-embedding-as-input" class="md-nav__link">
+    XGBSEDebiasedBCE: logistic regressions, time windows, embedding as input
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#explainability-through-prototypes" class="md-nav__link">
-    Explainability through prototypes
+  <a href="#xgbsestackedweibull-xgboost-as-risk-estimator-weibull-aft-for-survival-curve" class="md-nav__link">
+    XGBSEStackedWeibull: XGBoost as risk estimator, Weibull AFT for survival curve
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    Metrics
+  <a href="#xgbsekaplanneighbors-kaplan-meier-on-nearest-neighbors" class="md-nav__link">
+    XGBSEKaplanNeighbors: Kaplan-Meier on nearest neighbors
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#citing-xgbse" class="md-nav__link">
-    Citing xgbse
+  <a href="#xgbsekaplantree-single-tree-and-kaplan-meier-on-its-leaves" class="md-nav__link">
+    XGBSEKaplanTree: single tree, and Kaplan-Meier on its leaves
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#does-it-solve-the-problem" class="md-nav__link">
+    Does it solve the problem?
   </a>
   
 </li>
@@ -771,746 +785,175 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/loft-br/xgboost-survival-embeddings/edit/master/docs/basic-usage.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/loft-br/xgboost-survival-embeddings/edit/master/docs/how_xgbse_works.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>Basic Usage</h1>
+  <h1>How XGBSE works</h1>
 
-<h3 id="api"><em>API</em><a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
-<p>The package follows <code>scikit-learn</code> API, with a minor adaptation to work with time and event data (<code>y</code> as a <code>numpy</code> structured array of times and events). <code>.predict()</code> returns a dataframe where each column is a time window and values represent the probability of survival before or exactly at the time window.</p>
-<pre class="highlight"><code class="language-python"># importing dataset from pycox package
-from pycox.datasets import metabric
+<p>In this section, we try to make a quick introduction to <code>xgbse</code>. Refer to this <a href="https://github.com/loft-br/xgboost-survival-embeddings/blob/main/examples/how_xgbse_works.ipynb">this Notebook</a> for the full code and/or if you want a more practical introduction.</p>
+<h3 id="what-xgbse-tries-to-solve"><em>What <code>xgbse</code> tries to solve</em><a class="headerlink" href="#what-xgbse-tries-to-solve" title="Permanent link">&para;</a></h3>
+<p>The XGBoost implementation provides two methods for survival analysis: <a href="https://forecast.global/insight/underrated-in-ml-intro-to-survival-analysis/">Cox</a> and <a href="https://xgboost.readthedocs.io/en/latest/tutorials/aft_survival_analysis.html">Accelerated Failure Time (AFT)</a>. When it comes to ordering individuals by risk, both show competitive performance (as measured by C-index, the ROC AUC equivalent for survival) while being lightning fast.</p>
+<p>However, we can observe shortcomings when it comes to other desirable statistical properties. Specifically, three properties are of concern:</p>
+<ul>
+<li>prediction of <strong>survival curves</strong> rather than <strong>point estimates</strong></li>
+<li>estimation of <strong>confidence intervals</strong></li>
+<li><strong>calibrated</strong> (unbiased) expected survival times</li>
+</ul>
+<p>Let us take the AFT implementation as an example (as Cox only outputs risk and not time or survival). The AFT model outputs a value that should be interpreted as the expected survival time for each sample. To compute this time, it assumes an underlying distribution for times and events, controlled by the <code>aft_loss_distribution</code> and <code>aft_loss_distribution_scale</code> hyperparameters. As they control hard-wired assumptions of the model, we would expect that they could drastically change its output.</p>
+<p><center>
+    <img src="img/xgb_aft_hyperparams.png" width=700>
+    <br>
+    <sub>Table explaining the impact of <code>aft_loss_distribution</code> and <code>aft_loss_distribution_scale</code>, the latter represented by the <span class="arithmatex">\(z\)</span> variable in the formulas. Source: XGBoost AFT documentation.</sub>
+</center></p>
+<p>To confirm this is true, let us perform an experiment using the METABRIC dataset. We will test different values for <code>aft_loss_distribution_scale</code> while keeping <code>aft_loss_distribution</code> as <code>"normal"</code> and check how this will affect model performance. We test the following values: <code>[0.5, 1.0, 1.5]</code>. The following snippet gives a rough idea on how to run this simple experiment but you can find the full code <a href="https://github.com/loft-br/xgboost-survival-embeddings/blob/main/examples/how_xgbse_works.ipynb">here</a>. The results are very interesting, if not alarming:</p>
+<pre class="highlight"><code class="language-python">import xgboost as xgb
+from xgbse.metrics import concordance_index
+from xgbse._kaplan_neighbors import DEFAULT_PARAMS
 
-# importing model and utils from xgbse
+# dummy function representing dataprep
+dtrain, dval = prepare_data()
+
+# loop to show different scale results
+for scale in [1.5, 1.0, 0.5]:
+
+    # chaning parameter
+    DEFAULT_PARAMS['aft_loss_distribution_scale'] = scale
+
+    # training model
+    bst = xgb.train(
+        DEFAULT_PARAMS,
+        dtrain,
+        num_boost_round=1000,
+        early_stopping_rounds=10,
+        evals=[(dval, 'val')],
+        verbose_eval=0
+    )
+
+    # predicting and evaluating
+    preds = bst.predict(dval)
+    cind = concordance_index(y_valid, -preds, risk_strategy="precomputed")
+
+    print(f"aft_loss_distribution_scale: {scale}")
+    print(f"C-index: {cind:.3f}")
+    print(f"Average survival time: {preds.mean():.0f} days")
+    print("----")</code></pre>
+<pre class="highlight"><code>aft_loss_distribution_scale: 1.5
+C-index: 0.645
+Average survival time: 203 days
+----
+aft_loss_distribution_scale: 1.0
+C-index: 0.648
+Average survival time: 165 days
+----
+aft_loss_distribution_scale: 0.5
+C-index: 0.646
+Average survival time: 125 days
+----</code></pre>
+<p>In all three scenarios, we can build models with C-index results close to the state of the art [8]. However, our predictions change drastically, with two models showing an average predicted survival time difference of 78 days. This difference would perhaps be understandable if we were analyzing a single sample. But we're looking across the full validation dataset where the average prediction should be fairly stable regardless of which model we use.</p>
+<p>If we plot these results alongside an unbiased survival estimator such as the Kaplan Meier we can check that for each step of <code>0.5</code> in <code>aft_loss_distribution_scale</code> we move roughly one decile to the right in the curve. Also, we don't see a full survival curve: XGBoost only outputs point time-to-event predictions (no confidence intervals either).</p>
+<p><center>
+    <img src="img/avg_preds_vs_kaplan_xgb.png">
+    <br>
+    <sub>Vanilla XGBoost outputs predictions that are overly sensitive to hyperparameters, which prevents its use on applications that are sensitive to survival curve calibration.</sub>
+</center></p>
+<p>So what predictions should we trust? Such sensitivity to hyperparameters (<code>0.003</code> C-index variation yet 78 days difference) raises red flags for applications that are dependent on robust and calibrated time-to-event estimates, mining trust and preventing shipping survival analysis models to production.</p>
+<h3 id="leveraging-xgboost-as-a-feature-transformer"><em>Leveraging <code>xgboost</code> as a feature transformer</em><a class="headerlink" href="#leveraging-xgboost-as-a-feature-transformer" title="Permanent link">&para;</a></h3>
+<p>Although in need of an extension for statistical rigor, <code>xgboost</code> is still a powerhouse. C-index results show that the model can capture a great deal of signal, being competitive with the state of the art. We just need to adapt how we use it.</p>
+<p>Besides being leveraged for prediction tasks, Gradient Boosted Trees (GBTs) can also be used as <strong><em>feature transformers</em></strong> of the input data. Trees in the ensemble perform splits on features that discriminate the target, encoding the most relevant information for the task at hand in their structure. In particular, the terminal nodes (leaves) at each tree in the ensemble define a <strong><em><a href="http://scikit-learn.org/stable/auto_examples/ensemble/plot_feature_transformation.html">feature transformation</a> (embedding)</em></strong> of the input data.</p>
+<p><center>
+    <img src="img/xgb_feature_transform.png" width=700>
+    <br>
+    <sub>We can extract features from a forest model like XGBoost, transforming the original feature space into a "leaf occurrence" embedding. Orange nodes represent the path of a single sample in the ensemble.
+</sub>
+</center></p>
+<p>This kind of <em>tree ensemble embedding</em> has very convenient properties:</p>
+<ol>
+<li>
+<p><strong>sparsity and high-dimensionality:</strong> trees deal with nonlinearity and cast original features to a sparse, high-dimensional embedding, which helps linear models perform well when trained on it. This allows a <strong>Logistic Regression</strong> trained on the embedding (as one-hot encoded leaf indices) to have comparable performance to the actual ensemble, with the added benefit of probability calibration (see [1], [2], and [3])</p>
+</li>
+<li>
+<p><strong>supervision:</strong> trees also work as a noise filter, performing splits only through features that have predictive power. Thus, the embedding actually has a lower intrinsic dimension than the input data. This mitigates the curse of dimensionality and allows a <strong>K-Nearest Neighbor</strong> model trained on the embedding (using hamming distance) to have comparable performance to the actual ensemble, with the added flexibility to apply any function over the neighbor-sets to get predictions. This arbitrary function can be, for instance, an unbiased survival estimator such as the Kaplan-Meier estimator (see [4])</p>
+</li>
+</ol>
+<p>We take advantage of these properties in different ways as we will show in the next subsections.</p>
+<h3 id="xgbsedebiasedbce-logistic-regressions-time-windows-embedding-as-input"><em><code>XGBSEDebiasedBCE</code>: logistic regressions, time windows, embedding as input</em><a class="headerlink" href="#xgbsedebiasedbce-logistic-regressions-time-windows-embedding-as-input" title="Permanent link">&para;</a></h3>
+<p>Our first approach, <code>XGBSEDebiasedBCE</code>, takes inspiration from the multi-task logistic regression method in [5], the BCE approach in [6], and the probability calibration ideas from [1], [2] and [3].</p>
+<p>It consists of training a set of logistic regressions on top of the embedding produced by <code>xgboost</code>, each predicting survival at different user-defined discrete time windows. The classifiers remove individuals as they are censored, with targets that are indicators of surviving at each window.</p>
+<p><img src="img/xgb_bce_diagram.svg"></p>
+<p>The naive approach tends to give biased survival curves, due to the removal of censored individuals. Thus, we made some adaptations such that logistic regressions estimate the <code>di/ni</code> term (point probabilities) in the <a href="https://www.math.wustl.edu/~sawyer/handouts/greenwood.pdf">Kaplan-Meier formula</a> and then use the KM estimator to get nearly unbiased survival curves.</p>
+<p>This way, we can get full survival curves from <code>xgboost</code>, and confidence intervals with minor adaptations (such as performing some rounds of bootstrap).</p>
+<p>Training and scoring of logistic regression models is efficient, being performed in parallel through <code>joblib</code>, so the model can scale to hundreds of thousands or millions of samples.</p>
+<h3 id="xgbsestackedweibull-xgboost-as-risk-estimator-weibull-aft-for-survival-curve"><em><code>XGBSEStackedWeibull</code>: XGBoost as risk estimator, Weibull AFT for survival curve</em><a class="headerlink" href="#xgbsestackedweibull-xgboost-as-risk-estimator-weibull-aft-for-survival-curve" title="Permanent link">&para;</a></h3>
+<p>In <code>XGBSEStackedWeibull</code>, we perform stacking of a XGBoost survival model with a Weibull AFT parametric model. The XGBoost fits the data and then predicts a value that is interpreted as a risk metric. This risk metric is fed to the Weibull regression which uses it as its only independent variable.</p>
+<p>Thus, we can get the benefit of XGBoost discrimination power alongside the Weibull AFT statistical rigor (e.g. calibrated survival curves).</p>
+<p><img src="img/xgb_stacked_weibull_diagram.svg"></p>
+<p>As we're stacking XGBoost with a single, one-variable parametric model (as opposed to <code>XGBSEDebiasedBCE</code>), the model can be much faster (especially in training). We also have better extrapolation capabilities, due to stronger assumptions about the shape of the survival curve.</p>
+<p>However, these stronger assumptions may not fit some datasets as well as other methods.</p>
+<h3 id="xgbsekaplanneighbors-kaplan-meier-on-nearest-neighbors"><em><code>XGBSEKaplanNeighbors</code>: Kaplan-Meier on nearest neighbors</em><a class="headerlink" href="#xgbsekaplanneighbors-kaplan-meier-on-nearest-neighbors" title="Permanent link">&para;</a></h3>
+<p>As explained in the previous section, even though the embedding produced by <code>xgboost</code> is sparse and high dimensional, its intrisic dimensionality actually should be lower than the input data. This enables us to "convert" <code>xgboost</code> into a nearest neighbor model, where we use hamming distance to define similar elements as the ones that co-occurred the most at the ensemble terminal nodes. Then, at each neighbor-set we can get survival estimates with robust methods such as the Kaplan-Meier estimator.</p>
+<p><img src="img/xgb_neighbors_diagram.svg"></p>
+<p>We recommend using <code>dart</code> as the booster to prevent any tree to dominate variance in the ensemble and break the leaf co-ocurrence similarity logic. We built a high-performing implementation of the KM estimator to calculate several survival curves in a vectorized fashion, including upper and lower confidence intervals based on the Exponential Greenwood formula.</p>
+<p>However, this method can be very expensive at scales of hundreds of thousands of samples, due to the nearest neighbor search, both on training (construction of search index) and scoring (actual search).</p>
+<h3 id="xgbsekaplantree-single-tree-and-kaplan-meier-on-its-leaves"><em><code>XGBSEKaplanTree</code>: single tree, and Kaplan-Meier on its leaves</em><a class="headerlink" href="#xgbsekaplantree-single-tree-and-kaplan-meier-on-its-leaves" title="Permanent link">&para;</a></h3>
+<p>As a simplification to <code>XGBSEKaplanNeighbors</code>, we also provide a single tree implementation. Instead of doing expensive nearest neighbor searches, we fit a single tree via <code>xgboost</code> and calculate KM curves at each of its leaves.</p>
+<p><img src="img/xgb_tree_diagram.svg"></p>
+<p>It is by far the most efficient implementation, able to scale to millions of examples easily. At fit time, the tree is built and all KM curves are pre-calculated, so that at scoring time a simple query will suffice to get the model's estimates.</p>
+<p>However, as we're fitting a single tree, predictive power may be worse. That could be a sensible tradeoff, but we also provide <code>XGBSEBootstrapEstimator</code>, a bootstrap abstraction where we can fit a forest of <code>XGBSEKaplanTree</code>'s to improve accuracy and reduce variance.</p>
+<h3 id="does-it-solve-the-problem"><em>Does it solve the problem?</em><a class="headerlink" href="#does-it-solve-the-problem" title="Permanent link">&para;</a></h3>
+<p>Now we return to the first example and check how <code>XGBEmbedKaplanNeighbors</code> performs:</p>
+<pre class="highlight"><code class="language-python"># importing xgbse
 from xgbse import XGBSEKaplanNeighbors
-from xgbse.converters import convert_to_structured
+from xgbse._kaplan_neighbors import DEFAULT_PARAMS
+from xgbse.metrics import concordance_index
 
-# getting data
-df = metabric.read_df()
+# dummy function representing dataprep
+dtrain, dval = prepare_data()
 
-# splitting to X, y format
-X = df.drop(['duration', 'event'], axis=1)
-y = convert_to_structured(df['duration'], df['event'])
+# loop to show different scale results
+for scale in [1.5, 1.0, 0.5]:
 
-# fitting xgbse model
-xgbse_model = XGBSEKaplanNeighbors(n_neighbors=50)
-xgbse_model.fit(X, y)
+    # chaning parameter
+    DEFAULT_PARAMS['aft_loss_distribution_scale'] = scale
 
-# predicting
-event_probs = xgbse_model.predict(X)
-event_probs.head()</code></pre>
-<table>
-<thead>
-<tr>
-<th>index</th>
-<th>15</th>
-<th>30</th>
-<th>45</th>
-<th>60</th>
-<th>75</th>
-<th>90</th>
-<th>105</th>
-<th>120</th>
-<th>135</th>
-<th>150</th>
-<th>165</th>
-<th>180</th>
-<th>195</th>
-<th>210</th>
-<th>225</th>
-<th>240</th>
-<th>255</th>
-<th>270</th>
-<th>285</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0.98</td>
-<td>0.87</td>
-<td>0.81</td>
-<td>0.74</td>
-<td>0.71</td>
-<td>0.66</td>
-<td>0.53</td>
-<td>0.47</td>
-<td>0.42</td>
-<td>0.4</td>
-<td>0.3</td>
-<td>0.25</td>
-<td>0.21</td>
-<td>0.16</td>
-<td>0.12</td>
-<td>0.098</td>
-<td>0.085</td>
-<td>0.062</td>
-<td>0.054</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0.99</td>
-<td>0.89</td>
-<td>0.79</td>
-<td>0.7</td>
-<td>0.64</td>
-<td>0.58</td>
-<td>0.53</td>
-<td>0.46</td>
-<td>0.42</td>
-<td>0.39</td>
-<td>0.33</td>
-<td>0.31</td>
-<td>0.3</td>
-<td>0.24</td>
-<td>0.21</td>
-<td>0.18</td>
-<td>0.16</td>
-<td>0.11</td>
-<td>0.095</td>
-</tr>
-<tr>
-<td>2</td>
-<td>0.94</td>
-<td>0.78</td>
-<td>0.63</td>
-<td>0.57</td>
-<td>0.54</td>
-<td>0.49</td>
-<td>0.44</td>
-<td>0.37</td>
-<td>0.34</td>
-<td>0.32</td>
-<td>0.26</td>
-<td>0.23</td>
-<td>0.21</td>
-<td>0.16</td>
-<td>0.13</td>
-<td>0.11</td>
-<td>0.098</td>
-<td>0.072</td>
-<td>0.062</td>
-</tr>
-<tr>
-<td>3</td>
-<td>0.99</td>
-<td>0.95</td>
-<td>0.93</td>
-<td>0.88</td>
-<td>0.84</td>
-<td>0.81</td>
-<td>0.73</td>
-<td>0.67</td>
-<td>0.57</td>
-<td>0.52</td>
-<td>0.45</td>
-<td>0.37</td>
-<td>0.33</td>
-<td>0.28</td>
-<td>0.23</td>
-<td>0.19</td>
-<td>0.16</td>
-<td>0.12</td>
-<td>0.1</td>
-</tr>
-<tr>
-<td>4</td>
-<td>0.98</td>
-<td>0.92</td>
-<td>0.82</td>
-<td>0.77</td>
-<td>0.72</td>
-<td>0.68</td>
-<td>0.63</td>
-<td>0.6</td>
-<td>0.57</td>
-<td>0.55</td>
-<td>0.51</td>
-<td>0.48</td>
-<td>0.45</td>
-<td>0.42</td>
-<td>0.38</td>
-<td>0.33</td>
-<td>0.3</td>
-<td>0.22</td>
-<td>0.2</td>
-</tr>
-</tbody>
-</table>
-<p>You can also get interval predictions (probability of failing exactly at each time window) using <code>return_interval_probs</code>:</p>
-<pre class="highlight"><code class="language-python"># point predictions
-interval_probs = xgbse_model.predict(X_valid, return_interval_probs=True)
-interval_probs.head()</code></pre>
-<table>
-<thead>
-<tr>
-<th>index</th>
-<th>15</th>
-<th>30</th>
-<th>45</th>
-<th>60</th>
-<th>75</th>
-<th>90</th>
-<th>105</th>
-<th>120</th>
-<th>135</th>
-<th>150</th>
-<th>165</th>
-<th>180</th>
-<th>195</th>
-<th>210</th>
-<th>225</th>
-<th>240</th>
-<th>255</th>
-<th>270</th>
-<th>285</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0.024</td>
-<td>0.1</td>
-<td>0.058</td>
-<td>0.07</td>
-<td>0.034</td>
-<td>0.05</td>
-<td>0.12</td>
-<td>0.061</td>
-<td>0.049</td>
-<td>0.026</td>
-<td>0.096</td>
-<td>0.049</td>
-<td>0.039</td>
-<td>0.056</td>
-<td>0.04</td>
-<td>0.02</td>
-<td>0.013</td>
-<td>0.023</td>
-<td>0.0078</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0.014</td>
-<td>0.097</td>
-<td>0.098</td>
-<td>0.093</td>
-<td>0.052</td>
-<td>0.065</td>
-<td>0.054</td>
-<td>0.068</td>
-<td>0.034</td>
-<td>0.038</td>
-<td>0.053</td>
-<td>0.019</td>
-<td>0.018</td>
-<td>0.052</td>
-<td>0.038</td>
-<td>0.027</td>
-<td>0.018</td>
-<td>0.05</td>
-<td>0.015</td>
-</tr>
-<tr>
-<td>2</td>
-<td>0.06</td>
-<td>0.16</td>
-<td>0.15</td>
-<td>0.054</td>
-<td>0.033</td>
-<td>0.053</td>
-<td>0.046</td>
-<td>0.073</td>
-<td>0.032</td>
-<td>0.014</td>
-<td>0.06</td>
-<td>0.03</td>
-<td>0.017</td>
-<td>0.055</td>
-<td>0.031</td>
-<td>0.016</td>
-<td>0.014</td>
-<td>0.027</td>
-<td>0.0097</td>
-</tr>
-<tr>
-<td>3</td>
-<td>0.011</td>
-<td>0.034</td>
-<td>0.021</td>
-<td>0.053</td>
-<td>0.038</td>
-<td>0.038</td>
-<td>0.08</td>
-<td>0.052</td>
-<td>0.1</td>
-<td>0.049</td>
-<td>0.075</td>
-<td>0.079</td>
-<td>0.037</td>
-<td>0.052</td>
-<td>0.053</td>
-<td>0.041</td>
-<td>0.026</td>
-<td>0.04</td>
-<td>0.017</td>
-</tr>
-<tr>
-<td>4</td>
-<td>0.016</td>
-<td>0.067</td>
-<td>0.099</td>
-<td>0.046</td>
-<td>0.05</td>
-<td>0.042</td>
-<td>0.051</td>
-<td>0.028</td>
-<td>0.03</td>
-<td>0.018</td>
-<td>0.048</td>
-<td>0.022</td>
-<td>0.029</td>
-<td>0.038</td>
-<td>0.035</td>
-<td>0.047</td>
-<td>0.031</td>
-<td>0.08</td>
-<td>0.027</td>
-</tr>
-</tbody>
-</table>
-<h3 id="survival-curves-and-confidence-intervals"><em>Survival curves and confidence intervals</em><a class="headerlink" href="#survival-curves-and-confidence-intervals" title="Permanent link">&para;</a></h3>
-<p><code>XBGSEKaplanTree</code> and <code>XBGSEKaplanNeighbors</code> support estimation of survival curves and confidence intervals via the Exponential Greenwood formula out-of-the-box via the <code>return_ci</code> argument:</p>
-<pre class="highlight"><code class="language-python"># fitting xgbse model
-xgbse_model = XGBSEKaplanNeighbors(n_neighbors=50)
-xgbse_model.fit(X_train, y_train, time_bins=TIME_BINS)
+    # training model
+    xgbse_model = XGBSEKaplanNeighbors(DEFAULT_PARAMS, n_neighbors=30)
+    xgbse_model.fit(
+        X_train, y_train,
+        validation_data = (X_valid, y_valid),
+        early_stopping_rounds=10,
+        time_bins=TIME_BINS
+    )
 
-# predicting
-mean, upper_ci, lower_ci = xgbse_model.predict(X_valid, return_ci=True)
+    # predicting and evaluating
+    preds = xgbse_model.predict(X_valid)
+    cind = concordance_index(y_valid, preds)
+    avg_probs = preds[[30, 90, 150]].mean().values.round(4).tolist()
 
-# plotting CIs
-plot_ci(mean, upper_ci, lower_ci)</code></pre>
-<p><img src="img/usage_ci_1.png"></p>
-<p><code>XGBSEDebiasedBCE</code> does not support estimation of confidence intervals out-of-the-box, but we provide the <code>XGBSEBootstrapEstimator</code> to get non-parametric confidence intervals. As the stacked logistic regressions are trained with more samples (in comparison to neighbor-sets in <code>XGBSEKaplanNeighbors</code>), confidence intervals are more concentrated:</p>
-<pre class="highlight"><code class="language-python"># base model as BCE
-base_model = XGBSEDebiasedBCE(PARAMS_XGB_AFT, PARAMS_LR)
-
-# bootstrap meta estimator
-bootstrap_estimator = XGBSEBootstrapEstimator(base_model, n_estimators=20)
-
-# fitting the meta estimator
-bootstrap_estimator.fit(
-    X_train,
-    y_train,
-    validation_data=(X_valid, y_valid),
-    early_stopping_rounds=10,
-    time_bins=TIME_BINS,
-)
-
-# predicting
-mean, upper_ci, lower_ci = bootstrap_estimator.predict(X_valid, return_ci=True)
-
-# plotting CIs
-plot_ci(mean, upper_ci, lower_ci)</code></pre>
-<p><img src="img/usage_ci_2.png"></p>
-<p>The bootstrap abstraction can be used for <code>XBGSEKaplanTree</code> and <code>XBGSEKaplanNeighbors</code> as well, however, the confidence interval will be estimated via bootstrap only (not Exponential Greenwood formula):</p>
-<pre class="highlight"><code class="language-python"># base model
-base_model = XGBSEKaplanTree(PARAMS_TREE)
-
-# bootstrap meta estimator
-bootstrap_estimator = XGBSEBootstrapEstimator(base_model, n_estimators=100)
-
-# fitting the meta estimator
-bootstrap_estimator.fit(
-    X_train,
-    y_train,
-    time_bins=TIME_BINS,
-)
-
-# predicting
-mean, upper_ci, lower_ci = bootstrap_estimator.predict(X_valid, return_ci=True)
-
-# plotting CIs
-plot_ci(mean, upper_ci, lower_ci)</code></pre>
-<p><img src="img/usage_ci_3.png"></p>
-<p>With a sufficiently large <code>n_estimators</code>, interval width shouldn't be much different, with the added benefit of model stability and improved accuracy. Addittionaly, <code>XGBSEBootstrapEstimator</code> allows building confidence intervals for interval probabilities (which is not supported for Exponential Greenwood):</p>
-<pre class="highlight"><code class="language-python"># predicting
-mean, upper_ci, lower_ci = bootstrap_estimator.predict(
-    X_valid,
-    return_ci=True,
-    return_interval_probs=True
-)
-
-# plotting CIs
-plot_ci(mean, upper_ci, lower_ci)</code></pre>
-<p><img src="img/usage_ci_6.png"></p>
-<p>The parameter <code>ci_width</code> controls the width of the confidence interval. For <code>XGBSEKaplanTree</code> it should be passed at <code>.fit()</code>, as KM curves are pre-calculated for each leaf at fit time to avoid storing training data.</p>
-<pre class="highlight"><code class="language-python"># fitting xgbse model
-xgbse_model = XGBSEKaplanTree(PARAMS_TREE)
-xgbse_model.fit(X_train, y_train, time_bins=TIME_BINS, ci_width=0.99)
-
-# predicting
-mean, upper_ci, lower_ci = xgbse_model.predict(X_valid, return_ci=True)
-
-# plotting CIs
-plot_ci(mean, upper_ci, lower_ci)</code></pre>
-<p><img src="img/usage_ci_4.png"></p>
-<p>For other models (<code>XGBSEKaplanNeighbors</code> and <code>XGBSEBootstrapEstimator</code>) it should be passed at <code>.predict()</code>.</p>
-<pre class="highlight"><code class="language-python"># base model
-model = XGBSEKaplanNeighbors(PARAMS_XGB_AFT, N_NEIGHBORS)
-
-# fitting the meta estimator
-model.fit(
-    X_train, y_train,
-    validation_data = (X_valid, y_valid),
-    early_stopping_rounds=10,
-    time_bins=TIME_BINS
-)
-
-# predicting
-mean, upper_ci, lower_ci = model.predict(X_valid, return_ci=True, ci_width=0.99)
-
-# plotting CIs
-plot_ci(mean, upper_ci, lower_ci)</code></pre>
-<p><img src="img/usage_ci_5.png"></p>
-<h3 id="early-stopping"><em>Early stopping</em><a class="headerlink" href="#early-stopping" title="Permanent link">&para;</a></h3>
-<p>A simple interface to <code>xgboost</code> early stopping is provided.</p>
-<pre class="highlight"><code class="language-python"># splitting between train, and validation
-(X_train, X_valid,
- y_train, y_valid) = \
-train_test_split(X, y, test_size=0.2, random_state=42)
-
-# fitting with early stopping
-xgb_model = XGBSEDebiasedBCE()
-xgb_model.fit(
-    X_train,
-    y_train,
-    validation_data=(X_valid, y_valid),
-    early_stopping_rounds=10,
-    verbose_eval=50
-)</code></pre>
-<pre class="highlight"><code>[0] validation-aft-nloglik:16.86713
-Will train until validation-aft-nloglik hasn't improved in 10 rounds.
-[50]    validation-aft-nloglik:3.64540
-[100]   validation-aft-nloglik:3.53679
-[150]   validation-aft-nloglik:3.53207
-Stopping. Best iteration:
-[174]   validation-aft-nloglik:3.53004</code></pre>
-<h3 id="explainability-through-prototypes"><em>Explainability through prototypes</em><a class="headerlink" href="#explainability-through-prototypes" title="Permanent link">&para;</a></h3>
-<p><code>xgbse</code> also provides explainability through prototypes, searching the embedding for neighbors. The idea is to explain model predictions with real samples, providing solid ground to justify them (see [8]). The method <code>.get_neighbors()</code> searches for the <code>n_neighbors</code> nearest neighbors in <code>index_data</code> for each sample in <code>query_data</code>:</p>
-<pre class="highlight"><code class="language-python">neighbors = xgb_model.get_neighbors(
-    query_data=X_valid,
-    index_data=X_train,
-    n_neighbors=10
-)
-neighbors.head(5)</code></pre>
-<table>
-<thead>
-<tr>
-<th>index</th>
-<th>neighbor_1</th>
-<th>neighbor_2</th>
-<th>neighbor_3</th>
-<th>neighbor_4</th>
-<th>neighbor_5</th>
-<th>neighbor_6</th>
-<th>neighbor_7</th>
-<th>neighbor_8</th>
-<th>neighbor_9</th>
-<th>neighbor_10</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1225</td>
-<td>1151</td>
-<td>1513</td>
-<td>1200</td>
-<td>146</td>
-<td>215</td>
-<td>452</td>
-<td>1284</td>
-<td>1127</td>
-<td>1895</td>
-<td>257</td>
-</tr>
-<tr>
-<td>111</td>
-<td>1897</td>
-<td>1090</td>
-<td>1743</td>
-<td>1224</td>
-<td>892</td>
-<td>1695</td>
-<td>1624</td>
-<td>1546</td>
-<td>1418</td>
-<td>4</td>
-</tr>
-<tr>
-<td>554</td>
-<td>9</td>
-<td>627</td>
-<td>1257</td>
-<td>1460</td>
-<td>1031</td>
-<td>1575</td>
-<td>1557</td>
-<td>440</td>
-<td>1236</td>
-<td>858</td>
-</tr>
-<tr>
-<td>526</td>
-<td>726</td>
-<td>1042</td>
-<td>177</td>
-<td>1640</td>
-<td>242</td>
-<td>1529</td>
-<td>234</td>
-<td>1800</td>
-<td>399</td>
-<td>1431</td>
-</tr>
-<tr>
-<td>1313</td>
-<td>205</td>
-<td>1738</td>
-<td>599</td>
-<td>954</td>
-<td>1694</td>
-<td>1715</td>
-<td>1651</td>
-<td>828</td>
-<td>541</td>
-<td>992</td>
-</tr>
-</tbody>
-</table>
-<p>This way, we can inspect neighbors of a given sample to try to explain predictions. For instance, we can choose a <code>reference</code> and check that its neighbors actually are very similar as a sanity check:</p>
-<pre class="highlight"><code class="language-python">i = 0
-
-reference = X_valid.iloc[i]
-reference.name = 'reference'
-train_neighs = X_train.loc[neighbors.iloc[i]]
-
-pd.concat([reference.to_frame().T, train_neighs])</code></pre>
-<table>
-<thead>
-<tr>
-<th>index</th>
-<th>x0</th>
-<th>x1</th>
-<th>x2</th>
-<th>x3</th>
-<th>x4</th>
-<th>x5</th>
-<th>x6</th>
-<th>x7</th>
-<th>x8</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>reference</td>
-<td>5.7</td>
-<td>5.7</td>
-<td>11</td>
-<td>5.6</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>86</td>
-</tr>
-<tr>
-<td>1151</td>
-<td>5.8</td>
-<td>5.9</td>
-<td>11</td>
-<td>5.5</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>82</td>
-</tr>
-<tr>
-<td>1513</td>
-<td>5.5</td>
-<td>5.5</td>
-<td>11</td>
-<td>5.6</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>79</td>
-</tr>
-<tr>
-<td>1200</td>
-<td>5.7</td>
-<td>6</td>
-<td>11</td>
-<td>5.6</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>76</td>
-</tr>
-<tr>
-<td>146</td>
-<td>5.9</td>
-<td>5.9</td>
-<td>11</td>
-<td>5.5</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>75</td>
-</tr>
-<tr>
-<td>215</td>
-<td>5.8</td>
-<td>5.5</td>
-<td>11</td>
-<td>5.4</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>78</td>
-</tr>
-<tr>
-<td>452</td>
-<td>5.7</td>
-<td>5.7</td>
-<td>12</td>
-<td>5.5</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>76</td>
-</tr>
-<tr>
-<td>1284</td>
-<td>5.6</td>
-<td>6.2</td>
-<td>11</td>
-<td>5.6</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>79</td>
-</tr>
-<tr>
-<td>1127</td>
-<td>5.5</td>
-<td>5.1</td>
-<td>11</td>
-<td>5.5</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>86</td>
-</tr>
-<tr>
-<td>1895</td>
-<td>5.5</td>
-<td>5.4</td>
-<td>10</td>
-<td>5.5</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>85</td>
-</tr>
-<tr>
-<td>257</td>
-<td>5.7</td>
-<td>6</td>
-<td>9.6</td>
-<td>5.6</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>76</td>
-</tr>
-</tbody>
-</table>
-<p>We also can compare the Kaplan-Meier curve estimated from the neighbors to the actual model prediction, checking that it is inside the confidence interval:</p>
-<pre class="highlight"><code class="language-python">from xgbse.non_parametric import calculate_kaplan_vectorized
-
-mean, high, low = calculate_kaplan_vectorized(
-    np.array([y['c2'][neighbors.iloc[i]]]),
-    np.array([y['c1'][neighbors.iloc[i]]]),
-    TIME_BINS
-)
-
-model_surv = xgb_model.predict(X_valid)
-
-plt.figure(figsize=(12,4), dpi=120)
-plt.plot(model_surv.columns, model_surv.iloc[i])
-plt.plot(mean.columns, mean.iloc[0])
-plt.fill_between(mean.columns, low.iloc[0], high.iloc[0], alpha=0.1, color='red')</code></pre>
-<p><img src="img/usage_prototype_kaplan.png"></p>
-<p>Specifically, for <code>XBGSEKaplanNeighbors</code> prototype predictions and model predictions should match exactly if <code>n_neighbors</code> is the same and <code>query_data</code> is equal to the training data.</p>
-<h3 id="metrics"><em>Metrics</em><a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h3>
-<p>We made our own metrics submodule to make the lib self-contained. <code>xgbse.metrics</code> implements C-index, Brier Score and D-Calibration from [9], including adaptations to deal with censoring:</p>
-<pre class="highlight"><code class="language-python"># training model
-xgbse_model = XGBSEKaplanNeighbors(PARAMS_XGB_AFT, n_neighbors=30)
-
-xgbse_model.fit(
-    X_train, y_train,
-    validation_data = (X_valid, y_valid),
-    early_stopping_rounds=10,
-    time_bins=TIME_BINS
-)
-
-# predicting
-preds = xgbse_model.predict(X_valid)
-
-# importing metrics
-from xgbse.metrics import (
-    concordance_index,
-    approx_brier_score,
-    dist_calibration_score
-)
-
-# running metrics
-print(f'C-index: {concordance_index(y_valid, preds)}')
-print(f'Avg. Brier Score: {approx_brier_score(y_valid, preds)}')
-print(f"""D-Calibration: {dist_calibration_score(y_valid, preds) &gt; 0.05}""")</code></pre>
-<p><pre class="highlight"><code>C-index: 0.6495863029409356
-Avg. Brier Score: 0.1704190044350422
-D-Calibration: True</code></pre>
-As metrics follow the <code>score_func(y, y_pred, **kwargs)</code> pattern, we can use the sklearn model selection module easily:</p>
-<p><pre class="highlight"><code class="language-python">from sklearn.model_selection import cross_val_score
-from sklearn.metrics import make_scorer
-
-xgbse_model = XGBSEKaplanTree(PARAMS_TREE)
-results = cross_val_score(xgbse_model, X, y, scoring=make_scorer(approx_brier_score))
-results</code></pre>
-<pre class="highlight"><code>array([0.17432953, 0.15907712, 0.13783666, 0.16770409, 0.16792016])</code></pre></p>
-<h3 id="citing-xgbse"><em>Citing <code>xgbse</code></em><a class="headerlink" href="#citing-xgbse" title="Permanent link">&para;</a></h3>
-<p>To cite this repository:</p>
-<pre class="highlight"><code>@software{xgbse2020github,
-  author = {Davi Vieira and Gabriel Gimenez and Guilherme Marmerola and Vitor Estima},
-  title = {XGBoost Survival Embeddings: improving statistical properties of XGBoost survival analysis implementation},
-  url = {http://github.com/loft-br/xgboost-survival-embeddings},
-  version = {0.2.0},
-  year = {2020},
-}</code></pre>
+    print(f"aft_loss_distribution_scale: {scale}")
+    print(f"C-index: {cind:.3f}")
+    print(f"Average probability of survival at [30, 90, 150] days: {avg_probs}")
+    print("----")</code></pre>
+<pre class="highlight"><code>aft_loss_distribution_scale: 1.5
+C-index: 0.640
+Average probability of survival at [30, 90, 150] days: [0.9109, 0.6854, 0.528]
+----
+aft_loss_distribution_scale: 1.0
+C-index: 0.644
+Average probability of survival at [30, 90, 150] days: [0.9111, 0.6889, 0.5333]
+----
+aft_loss_distribution_scale: 0.5
+C-index: 0.650
+Average probability of survival at [30, 90, 150] days: [0.913, 0.6904, 0.5289]
+----</code></pre>
+<p>As measured by the average probability of survival in 30, 90 and 150 days the model is very stable, showing similar calibration results independently of <code>aft_loss_distribution_scale</code> choice, with comparable (or a bit worse) C-index results. Visually, the comparison of the average model predictions to a Kaplan Meier yields much better results:</p>
+<p><center>
+    <img src="img/avg_preds_vs_kaplan_xgbse.png">
+    <br>
+    <sub>XGBSE outputs a full survival curve and it is much more stable than vanilla XGBoost, its average prediction being fairly close to the unbiased KM estimator. </sub>
+</center></p>
+<p>No more point estimates and high variation! Although is too harsh to claim that the problem is solved, we believe that the package can be a good, more statistically robust alternative to survival analysis.</p>
 <h3 id="references"><em>References</em><a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <p>[1] X. He, J. Pan, O. Jin, T. Xu, B. Liu, T. Xu, Y. Shi, A. Atallah, R. Herbrich, S. Bowers, and J. Q. Candela. <a href="https://research.fb.com/wp-content/uploads/2016/11/practical-lessons-from-predicting-clicks-on-ads-at-facebook.pdf">Practical Lessons from Predicting Clicks on Ads at Facebook</a> (2014). In Proceedings of the Eighth International Workshop on Data Mining for Online Advertising (ADKDD’14).</p>
 <p>[2] <a href="https://scikit-learn.org/stable/auto_examples/ensemble/plot_feature_transformation.html">Feature transformations with ensembles of trees</a>. Scikit-learn documentation at <a href="https://scikit-learn.org/">https://scikit-learn.org/</a>.</p>
@@ -1534,7 +977,7 @@ results</code></pre>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="how_xgbse_works.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: How XGBSE works" rel="prev">
+        <a href="install.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1543,20 +986,20 @@ results</code></pre>
               <span class="md-footer__direction">
                 Previous
               </span>
-              How XGBSE works
+              Install
             </div>
           </div>
         </a>
       
       
         
-        <a href="modules/base.html" class="md-footer__link md-footer__link--next" aria-label="Next: XGBSEBaseEstimator" rel="next">
+        <a href="basic-usage.html" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Usage" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              XGBSEBaseEstimator
+              Basic Usage
             </div>
           </div>
           <div class="md-footer__button md-icon">

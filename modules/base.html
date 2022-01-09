@@ -12,19 +12,19 @@
         <meta name="author" content="Loft Data Science Team">
       
       
-      <link rel="icon" href="img/loft_icon.png">
+      <link rel="icon" href="../img/loft_icon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.5">
     
     
       
-        <title>XGBoost Survival Embeddings</title>
+        <title>XGBSEBaseEstimator - XGBoost Survival Embeddings</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ee0f47ba.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ee0f47ba.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -38,13 +38,13 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/googlecode.min.css">
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#xgbse-xgboost-survival-embeddings" class="md-skip">
+        <a href="#xgbse_basexgbsebaseestimator" class="md-skip">
           Skip to content
         </a>
       
@@ -82,9 +82,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="XGBoost Survival Embeddings" class="md-header__button md-logo" aria-label="XGBoost Survival Embeddings" data-md-component="logo">
+    <a href="../index.html" title="XGBoost Survival Embeddings" class="md-header__button md-logo" aria-label="XGBoost Survival Embeddings" data-md-component="logo">
       
-  <img src="img/loft_icon.png" alt="logo">
+  <img src="../img/loft_icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              XGBSEBaseEstimator
             
           </span>
         </div>
@@ -172,12 +172,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="index.html" class="md-tabs__link md-tabs__link--active">
+    <a href="../index.html" class="md-tabs__link">
       Home
     </a>
   </li>
@@ -189,7 +187,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="install.html" class="md-tabs__link">
+    <a href="../install.html" class="md-tabs__link">
       Install
     </a>
   </li>
@@ -201,7 +199,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="how_xgbse_works.html" class="md-tabs__link">
+    <a href="../how_xgbse_works.html" class="md-tabs__link">
       How XGBSE works
     </a>
   </li>
@@ -213,7 +211,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="basic-usage.html" class="md-tabs__link">
+    <a href="../basic-usage.html" class="md-tabs__link">
       Basic Usage
     </a>
   </li>
@@ -222,13 +220,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="modules/base.html" class="md-tabs__link">
+      <a href="base.html" class="md-tabs__link md-tabs__link--active">
         Modules
       </a>
     </li>
@@ -244,7 +244,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="examples/confidence_interval.html" class="md-tabs__link">
+      <a href="../examples/confidence_interval.html" class="md-tabs__link">
         Examples
       </a>
     </li>
@@ -257,7 +257,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="benchmarks/benchmarks.html" class="md-tabs__link">
+    <a href="../benchmarks/benchmarks.html" class="md-tabs__link">
       Benchmarks
     </a>
   </li>
@@ -276,7 +276,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -286,9 +286,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="XGBoost Survival Embeddings" class="md-nav__button md-logo" aria-label="XGBoost Survival Embeddings" data-md-component="logo">
+    <a href="../index.html" title="XGBoost Survival Embeddings" class="md-nav__button md-logo" aria-label="XGBoost Survival Embeddings" data-md-component="logo">
       
-  <img src="img/loft_icon.png" alt="logo">
+  <img src="../img/loft_icon.png" alt="logo">
 
     </a>
     XGBoost Survival Embeddings
@@ -314,48 +314,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#xgbse-xgboost-survival-embeddings" class="md-nav__link">
-    xgbse: XGBoost Survival Embeddings
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -368,7 +331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="install.html" class="md-nav__link">
+      <a href="../install.html" class="md-nav__link">
         Install
       </a>
     </li>
@@ -383,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="how_xgbse_works.html" class="md-nav__link">
+      <a href="../how_xgbse_works.html" class="md-nav__link">
         How XGBSE works
       </a>
     </li>
@@ -398,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="basic-usage.html" class="md-nav__link">
+      <a href="../basic-usage.html" class="md-nav__link">
         Basic Usage
       </a>
     </li>
@@ -411,12 +374,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -437,11 +402,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="modules/base.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          XGBSEBaseEstimator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="base.html" class="md-nav__link md-nav__link--active">
         XGBSEBaseEstimator
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xgbse._base.XGBSEBaseEstimator" class="md-nav__link">
+    xgbse._base.XGBSEBaseEstimator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgbse._base.XGBSEBaseEstimator.get_neighbors" class="md-nav__link">
+    get_neighbors()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -453,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/bce.html" class="md-nav__link">
+      <a href="bce.html" class="md-nav__link">
         XGBSEDebiasedBCE
       </a>
     </li>
@@ -467,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/stacked_weibull.html" class="md-nav__link">
+      <a href="stacked_weibull.html" class="md-nav__link">
         XGBSEStackedWeibull
       </a>
     </li>
@@ -481,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/kaplan_neighs.html" class="md-nav__link">
+      <a href="kaplan_neighs.html" class="md-nav__link">
         XGBSEKaplanNeighbors
       </a>
     </li>
@@ -495,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/kaplan_tree.html" class="md-nav__link">
+      <a href="kaplan_tree.html" class="md-nav__link">
         XGBSEKaplanTree
       </a>
     </li>
@@ -509,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/meta.html" class="md-nav__link">
+      <a href="meta.html" class="md-nav__link">
         XGBSEBootstrapEstimator
       </a>
     </li>
@@ -523,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/extrapolation.html" class="md-nav__link">
+      <a href="extrapolation.html" class="md-nav__link">
         extrapolation
       </a>
     </li>
@@ -537,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/converters.html" class="md-nav__link">
+      <a href="converters.html" class="md-nav__link">
         converters
       </a>
     </li>
@@ -551,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/metrics.html" class="md-nav__link">
+      <a href="metrics.html" class="md-nav__link">
         metrics
       </a>
     </li>
@@ -599,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="examples/confidence_interval.html" class="md-nav__link">
+      <a href="../examples/confidence_interval.html" class="md-nav__link">
         Confidence intervals
       </a>
     </li>
@@ -613,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="examples/extrapolation_example.html" class="md-nav__link">
+      <a href="../examples/extrapolation_example.html" class="md-nav__link">
         Extrapolation
       </a>
     </li>
@@ -635,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="benchmarks/benchmarks.html" class="md-nav__link">
+      <a href="../benchmarks/benchmarks.html" class="md-nav__link">
         Benchmarks
       </a>
     </li>
@@ -652,7 +665,7 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -660,6 +673,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -669,8 +684,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#xgbse-xgboost-survival-embeddings" class="md-nav__link">
-    xgbse: XGBoost Survival Embeddings
+  <a href="#xgbse._base.XGBSEBaseEstimator" class="md-nav__link">
+    xgbse._base.XGBSEBaseEstimator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xgbse._base.XGBSEBaseEstimator.get_neighbors" class="md-nav__link">
+    get_neighbors()
   </a>
   
 </li>
@@ -687,32 +709,123 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/loft-br/xgboost-survival-embeddings/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/loft-br/xgboost-survival-embeddings/edit/master/docs/modules/base.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>Home</h1>
+<h1 id="xgbse_basexgbsebaseestimator">xgbse._base.XGBSEBaseEstimator<a class="headerlink" href="#xgbse_basexgbsebaseestimator" title="Permanent link">&para;</a></h1>
 
-<h2 id="xgbse-xgboost-survival-embeddings"><code>xgbse</code>: XGBoost Survival Embeddings<a class="headerlink" href="#xgbse-xgboost-survival-embeddings" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><em>"There are two cultures in the use of statistical modeling to reach conclusions from data. One assumes that the data are generated by a given stochastic data model. The other uses algorithmic models and treats the data mechanism as unknown."</em><br>- Leo Breiman, <a href="https://projecteuclid.org/euclid.ss/1009213726">Statistical Modeling: The Two Cultures</a></p>
-</blockquote>
-<p>Survival Analysis is a powerful statistical technique with a wide range of applications such as predictive maintenance, customer churn, credit risk, asset liquidity risk, and others.</p>
-<p>However, it has not yet seen widespread adoption in industry, with most implementations embracing one of two cultures:</p>
-<ol>
-<li>models with sound statistical properties, but lacking in expressivess and computational efficiency</li>
-<li>highly efficient and expressive models, but lacking in statistical rigor</li>
-</ol>
-<p><code>xgbse</code> aims to unite the two cultures in a single package, adding a layer of statistical rigor to the highly expressive and computationally effcient <code>xgboost</code> survival analysis implementation.</p>
-<p>The package offers:</p>
-<ul>
-<li>calibrated and unbiased survival curves with confidence intervals (instead of point predictions)</li>
-<li>great predictive power, competitive to vanilla <code>xgboost</code></li>
-<li>efficient, easy to use implementation</li>
-<li>explainability through prototypes</li>
-</ul>
-<p>This is a research project by <a href="https://medium.com/loftbr/datascience/home">Loft Data Science Team</a>, however we invite the community to contribute. Please help by trying it out, reporting bugs, and letting us know what you think!</p>
+
+  <div class="doc doc-object doc-class">
+
+<a id="xgbse._base.XGBSEBaseEstimator"></a>
+    <div class="doc doc-contents first">
+
+      <p>Base class for all estimators in xgbse. Implements explainability through prototypes.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h3 class="doc doc-heading" id="xgbse._base.XGBSEBaseEstimator.get_neighbors">
+<code class="highlight language-python">get_neighbors(self, query_data, index_data=None, query_id=None, index_id=None, n_neighbors=30)</code>
+
+
+<a class="headerlink" href="#xgbse._base.XGBSEBaseEstimator.get_neighbors" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+      <p>Search for portotypes (size: n_neighbors) for each unit in a
+dataframe X. If units array is specified, comparables will be returned using
+its identifiers. If not, a dataframe of comparables indexes for each sample
+in X is returned.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>query_data</code></td>
+        <td><code>pd.DataFrame</code></td>
+        <td><p>Dataframe of features to be used as input</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>query_id</code></td>
+        <td><code>[pd.Series, np.array]</code></td>
+        <td><p>Series or array of identification for each sample of query_data.
+Will be used in set_index if specified.</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>index_id</code></td>
+        <td><code>[pd.Series, np.array]</code></td>
+        <td><p>Series or array of identification for each sample of index_id.
+If specified, comparables will be returned using this identifier.</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>n_neighbors</code></td>
+        <td><code>int</code></td>
+        <td><p>Number of neighbors/comparables to be considered.</p></td>
+        <td><code>30</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>comps_df (pd.DataFrame)</code></td>
+      <td><p>A dataframe of comparables/neighbors for each
+evaluated sample. If units identifier is specified, the output dataframe
+is converted to use units the proper identifier for each sample. The
+reference sample is considered to be the index of the dataframe and
+its comparables are its specific row values.</p></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
 
               
             </article>
@@ -725,15 +838,30 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
+        
+        <a href="../basic-usage.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Basic Usage" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Basic Usage
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="install.html" class="md-footer__link md-footer__link--next" aria-label="Next: Install" rel="next">
+        <a href="bce.html" class="md-footer__link md-footer__link--next" aria-label="Next: XGBSEDebiasedBCE" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Install
+              XGBSEDebiasedBCE
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -763,18 +891,18 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.b6ff8c07.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.b6ff8c07.min.js"}</script>
     
     
-      <script src="assets/javascripts/bundle.5e13d264.min.js"></script>
+      <script src="../assets/javascripts/bundle.5e13d264.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
       
-        <script src="javascripts/config.js"></script>
+        <script src="../javascripts/config.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
-        <script src="javascripts/tables.js"></script>
+        <script src="../javascripts/tables.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
